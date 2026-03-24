@@ -22,10 +22,28 @@
       --overlay: rgba(0, 0, 0, 0.38);
     }
 
-    * {
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
+      * {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+.board,
+.card,
+.restart-btn,
+.victory-btn {
+  touch-action: manipulation;
+}
+
+.card,
+.restart-btn,
+.victory-btn {
+  -webkit-user-select: none;
+  user-select: none;
+}
 
     html, body {
       margin: 0;
